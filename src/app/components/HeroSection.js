@@ -5,7 +5,7 @@ import {
   SiNodedotjs, SiJavascript, SiTypescript, SiHtml5, SiCss3,
   SiGit, SiGithub, SiVercel, SiFirebase
 } from "react-icons/si";
-import { FaDownload } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import ParticlesBackground from "./ParticlesBackground";
 
 const techIcons = [
@@ -93,8 +93,10 @@ const HeroSection = () => {
   rel="noopener noreferrer"
   className="flex items-center gap-2 border border-teal-500 text-teal-400 px-6 py-2 rounded hover:bg-teal-600 hover:text-white transition"
 >
-  <FaDownload /> View Resume
+  <FaEye className="text-base md:text-lg" />
+  <span>View Resume</span>
 </a>
+
 
           <a
             href="/contact"

@@ -71,7 +71,7 @@ export default function ContactPage() {
                 href="/resume.pdf"
                 download
                 variant="shadow"
-                className="flex items-center gap-2 px-6 py-8 font-medium rounded-xl bg-[#7c3aed] text-[#e2e8f0] hover:bg-[#8b5cf6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-sky-400/30"
+                className="flex items-center gap-8 px-6 py-4 font-medium rounded-xl bg-[#7c3aed] text-[#e2e8f0] hover:bg-[#8b5cf6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-sky-400/30"
               >
                 <FaDownload className="text-4xl" />
                 Download Resume
@@ -80,7 +80,7 @@ export default function ContactPage() {
               <Button
                 onPress={handleMeetClick}
                 variant="shadow"
-                className="flex items-center gap-3 px-6 py-8 font-medium rounded-xl bg-[#7c3aed] text-[#e2e8f0] hover:bg-[#8b5cf6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-sky-400/30"
+                className="flex items-center gap-3 px-6 py-4 font-medium rounded-xl bg-[#7c3aed] text-[#e2e8f0] hover:bg-[#8b5cf6] hover:text-white transition-all duration-300 shadow-lg hover:shadow-sky-400/30"
               >
                 <FaCalendarAlt className="text-4xl" />
                 Schedule a Meet
