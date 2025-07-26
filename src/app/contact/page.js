@@ -33,7 +33,8 @@ export default function ContactPage() {
 
           {/* Contact Info */}
           <div className="flex-1 space-y-6 text-center md:text-left">
-            <h2 className="text-2xl font-semibold text-cyan-300">Let's Connect</h2>
+           <h2 className="text-2xl font-semibold text-cyan-300">Let&apos;s Connect</h2>
+
             <p className="text-gray-300 text-sm">
               Whether you want to collaborate, chat tech, or just say hi, feel free to reach out!
             </p>
