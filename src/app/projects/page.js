@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaGithub, FaChartBar } from "react-icons/fa"; // ✅ FaChartBar used instead of missing SiRecharts
+import { FaGithub, FaChartBar } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -18,10 +18,15 @@ import {
   SiExpress,
   SiHuggingface,
   SiJavascript,
+  SiFlask,
+  SiCss3,
+  SiHtml5,
+  SiBootstrap
 } from "react-icons/si";
 import Modal from "@/app/components/Modal";
 
 const projects = [
+ 
   {
     title: "Times Health (Ongoing)",
     shortDesc:
@@ -86,6 +91,72 @@ const projects = [
       "Created using BlenderBot from HuggingFace, Express.js for backend routing, and deployed on Vercel.",
     ],
   },
+   {
+  title: "SkyPredict",
+  shortDesc:
+    "Rain prediction tool aiding farmers and transport sectors with smart weather insights.",
+  stack: [SiPython, SiFlask, FaChartBar],
+  github: "https://github.com/LaavKush/precipitation-prediction",
+  live: "#",
+  year: 2024,
+  details: [
+    "Developed a rain prediction model to assist agriculture and transport decision-making.",
+    "Used Python for data preprocessing and trained regression models to forecast rainfall accurately.",
+    "Built the web interface with Flask and visualized predictions with Power BI dashboards.",
+    "Integrated real-time weather data and News API to enhance prediction context and alerting.",
+  ],
+},
+ {
+    title: "Thangabali's Suitcase Marketplace",
+    shortDesc:
+      "A second-hand suitcase marketplace backend with user authentication and product listings.",
+    stack: [SiNodedotjs, SiExpress, SiMongodb],
+    github: "https://github.com/LaavKush/thangabali",
+    live: "https://thangabali-1.onrender.com/",
+    year: 2024,
+    details: [
+      "Developed a full-stack backend for a fictional suitcase marketplace using Node.js, Express, and MongoDB.",
+      "Implemented JWT-based authentication for secure signup and login.",
+      "Enabled posting, browsing, and managing suitcase listings through protected REST API endpoints.",
+      "Included a Postman collection for easier API testing and documentation.",
+      "Deployed on Render with environment variables and proper project structuring.",
+    ],
+  },
+  {
+  title: "RecycleMitra",
+  shortDesc:
+    "An eco-conscious web app for scheduling doorstep pickups and tracking recycling rewards.",
+  stack: [SiReact, SiNodedotjs, SiMongodb, SiBootstrap],
+  github: "https://github.com/LaavKush/Recycle-Mitra",
+  live: "https://recycle-mitra-seven.vercel.app/",
+  year: 2024,
+  details: [
+    "Designed a user-friendly recycling app encouraging responsible waste management with real-time pickup scheduling.",
+    "Built the frontend with React.js and Bootstrap; backend with Node.js and MongoDB.",
+    "Implemented JWT-based authentication for secure user sign-up and login.",
+    "Gamified user experience by integrating an Instant Rewards Program with credit redemption in the marketplace.",
+    "Deployed on Vercel to ensure accessibility and smooth performance.",
+  ],
+},
+
+{
+  title: "Gemini Clone",
+  shortDesc:
+    "AI-powered chatbot interface using Gemini's free API with a responsive UI clone.",
+  stack: [SiJavascript, SiCss3, SiHtml5],
+  github: "https://github.com/LaavKush/gemini_clone",
+  live: "https://gemini-clone-beta-vert.vercel.app/",
+  year: 2025,
+  details: [
+  "Developed a responsive Gemini chatbot interface using HTML, CSS and React.js",
+  "Utilized Gemini's free API to deliver real-time conversational responses.",
+  "Implemented features like dropdown toggles, smooth animations, and dark mode.",
+  "Built using Vite for fast development and deployed publicly via Vercel.",
+]
+,
+}
+,
+
 ];
 
 export default function ProjectsSection() {
@@ -127,29 +198,28 @@ export default function ProjectsSection() {
             </div>
 
             <div className="flex gap-6 text-sm mt-auto">
-  {project.github !== "#" && (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
-    >
-      <FaGithub className="text-lg" /> GitHub
-    </a>
-  )}
+              {project.github !== "#" && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
+                >
+                  <FaGithub className="text-lg" /> GitHub
+                </a>
+              )}
 
-  {project.live !== "#" && (
-    <a
-      href={project.live}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
-    >
-      🌐 Live
-    </a>
-  )}
-</div>
-
+              {project.live !== "#" && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
+                >
+                  🌐 Live
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

@@ -8,6 +8,7 @@ const Navbar = () => {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'About Me', href: '/about' },
+    { label: 'Experience', href: '/experience' },
     { label: 'Skills', href: '/skills' },
     { label: 'Projects', href: '/projects' },
     { label: 'Achievements', href: '/achievements' },
@@ -38,18 +39,22 @@ const Navbar = () => {
         </motion.div>
 
         {/* Navigation Links */}
-        <ul className="hidden md:flex gap-8 text-[17px] font-medium">
-          {navItems.map((item, idx) => (
-            <li key={idx}>
-              <a
-                href={item.href}
-                className="relative text-[#e2e8f0] hover:text-[#38bdf8] transition duration-300 after:absolute after:block after:h-[2px] after:bg-[#7c3aed] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:left-0 after:-bottom-1"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <ul className="hidden md:flex gap-6 text-[17px] font-medium">
+  {navItems.map((item, idx) => (
+    <li key={idx}>
+      <a
+        href={item.href}
+        className="relative inline-block px-2 py-1 text-[#e2e8f0] hover:text-white transition-colors duration-300
+        before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0
+        before:bg-gradient-to-r before:from-[#22d3ee] before:to-[#7c3aed]
+        hover:before:w-full before:transition-all before:duration-500"
+      >
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>
+
       </div>
     </nav>
   );
