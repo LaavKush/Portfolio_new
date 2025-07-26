@@ -69,7 +69,7 @@ npm run start
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/laavanya-kushwaha-5748a5291/)
 - 📧 Email: laavanyakushwaha@gmail.com 
-- 🌐 [Live Portfolio](https://your-deployed-site-url.com) 
+- 🌐 [Live Portfolio](https://laavanyaportfolio.vercel.app/) 
 
 ---
 
