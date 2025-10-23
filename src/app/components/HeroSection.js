@@ -88,7 +88,7 @@ const HeroSection = () => {
             View Projects
           </a>
           <a
-  href="/resume.pdf"
+  href="/Laavanya_Resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-2 border border-teal-500 text-teal-400 px-6 py-2 rounded hover:bg-teal-600 hover:text-white transition"
