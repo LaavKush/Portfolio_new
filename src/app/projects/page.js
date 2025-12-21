@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaGithub, FaChartBar } from "react-icons/fa";
+import { FaGithub, FaChartBar,FaChartPie } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -21,14 +21,41 @@ import {
   SiFlask,
   SiCss3,
   SiHtml5,
-  SiBootstrap
+  SiBootstrap,
+  SiTensorflow,
+  SiStreamlit,
+  SiPandas,
+  SiNumpy
 } from "react-icons/si";
+
 import Modal from "@/app/components/Modal";
 
 const projects = [
+  {
+  title: "Fabric Sustainability Classifier",
+  shortDesc:
+    "ML-powered dashboard to classify fabrics as sustainable or unsustainable using text and image analysis.",
+  stack: [
+    SiPython,
+    SiTensorflow,
+    SiStreamlit,
+    SiPandas,
+    SiNumpy,
+    FaChartPie,
+  ],
+  github: "#",
+  live: "#",
+  year: 2025,
+  details: [
+    "The fashion industry lacks transparent, data-driven tools to assess fabric sustainability, contributing to high environmental impact.",
+    "This project classifies fabrics using dual-mode machine learning: NLP-based text classification and CNN-based image classification.",
+    "Built an interactive Streamlit dashboard with explainable AI using Grad-CAM, dataset insights, and real-time predictions to support eco-conscious decision-making.",
+  ],
+}
+,
  
   {
-    title: "Times Health (Ongoing)",
+    title: "Times Health",
     shortDesc:
       "AI-powered healthcare platform for doctors to analyze reports and monitor trends.",
     stack: [
