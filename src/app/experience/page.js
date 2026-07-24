@@ -75,6 +75,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const experiences = [
   {
@@ -126,7 +127,7 @@ const experiences = [
 
 const ExperienceTimeline = () => {
   return (
-    <section className="bg-black text-white py-24 px-4 md:px-10 id='experience'">
+    <section id="experience" className="bg-black text-white py-24 px-4 md:px-10">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-teal-400 tracking-wide">
           Experience
@@ -161,16 +162,15 @@ const ExperienceTimeline = () => {
                     </p>
                   </div>
 
-                  {/* Company Logo */}
+                  {/* Company Logo using Next.js Image */}
                   {exp.logo && (
                     <div className="p-2 bg-slate-900/80 rounded-lg border border-gray-800 shrink-0">
-                      <img
+                      <Image
                         src={exp.logo}
                         alt={`${exp.org} logo`}
+                        width={120}
+                        height={48}
                         className="h-12 w-auto object-contain max-w-[120px]"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                        }}
                       />
                     </div>
                   )}

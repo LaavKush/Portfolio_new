@@ -244,7 +244,7 @@ const HeroSection = () => {
 
         {/* Main Heading */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-4">
-          Hello, I'm{" "}
+          Hello, I&apos;m{" "}
           <span className="bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(34,211,238,0.2)]">
             Laavanya Kushwaha
           </span>
