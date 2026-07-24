@@ -1,4 +1,3 @@
-// app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
@@ -20,10 +19,18 @@ const geistMono = Geist_Mono({
 // Metadata
 export const metadata = {
   title: "Laavanya Kushwaha | Portfolio",
-  description: "Developer | AI & Web | Building Tech that Empowers Communities",
+  description: "Software Developer & AI Engineer | Building Tech that Empowers Communities",
+  icons: {
+    icon: [
+      { url: "/logo_web.png" },
+      { url: "/logo_web.png", type: "image/png" },
+    ],
+    shortcut: "/logo_web.png",
+    apple: "/logo_web.png",
+  },
 };
 
-// ✅ Server Component (NO dynamic, NO ssr:false)
+// Server Component
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -31,7 +38,6 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
         <NextUIProviderWrapper>
-          {/* ✅ Client-only Navbar */}
           <Navbar />
           <main className="min-h-screen">{children}</main>
         </NextUIProviderWrapper>
